@@ -1,0 +1,12 @@
+PROC main:
+	LOCAL name$(20)
+	LOCAL i%
+	PRINT "Enter your name: "
+	INPUT name$
+	WHILE i%<10
+	  PRINT "Hello, "; name$
+	  PAUSE 10
+	  i%=i%+1
+	ENDWH
+	GET
+ENDP

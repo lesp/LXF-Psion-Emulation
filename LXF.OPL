@@ -1,0 +1,16 @@
+PROC lxf:
+  dINIT "Linux Format"
+  dTEXT "","Is Linux Format the best Linux magazine?"
+  dBUTTONS "Yes",%y,"No",%n
+  IF DIALOG=%y
+    dINIT "Correct!"
+    dTEXT "","You have chosen wisely"
+    DIALOG
+  ELSE
+    dINIT "Incorrect"
+    dTEXT "","You chose, poorly"
+    DIALOG
+  ENDIF
+  PRINT "Press a key to exit"
+  GET
+ENDP
